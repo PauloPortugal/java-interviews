@@ -1,13 +1,14 @@
 package com.interview.problems;
 
 import java.util.Arrays;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class RealFizzBuzz {
 
-    private static String WHITE_SPACE;
+    private final static String WHITE_SPACE = " ";
 
     /**
      * Prints out the following for a contiguous range of numbers:
@@ -22,22 +23,26 @@ public class RealFizzBuzz {
      * @return the string representation of fizz buzz
      */
     public static String realFizzBuzz(int n) {
-        WHITE_SPACE = " ";
+        var fizzBuzz = getFizzBuzz(n);
 
-        var fizzBuzz = IntStream.range(1, n + 1)
+        return fizzBuzz +
+                "\n" +
+                Arrays.toString(getFrequencies(fizzBuzz).entrySet().toArray());
+    }
+
+    private static String getFizzBuzz(int n) {
+        return IntStream.range(1, n + 1)
                 .mapToObj(RealFizzBuzz::fizzBuzz)
                 .collect(Collectors.joining(WHITE_SPACE));
+    }
 
-        var frequencies = Arrays.stream(fizzBuzz.split(WHITE_SPACE))
+    private static Map<String, Long> getFrequencies(String fizzBuzz) {
+        return Arrays.stream(fizzBuzz.split(WHITE_SPACE))
                 .map(transformIntegers())
                 .collect(Collectors.groupingBy(fr -> fr, // group by this
                         Collectors.mapping(
                                 fr -> 1, // mapping each element to this
                                 Collectors.counting())));
-
-        return fizzBuzz +
-                "\n" +
-                Arrays.toString(frequencies.entrySet().toArray());
     }
 
     private static String fizzBuzz(int n) {
