@@ -8,6 +8,7 @@ There may be some more elegant solutions.
  * Calculate the Largest Prime Factor
  * Palindrome
  * Pascal's Triangle
+ * Prime Number Check
  * Reverse Generic Array
 
 ### Java features ordered by releases
