@@ -6,6 +6,7 @@ public class PrimeNumberCheck {
 
     /**
      * Check if the provided input is a prime input
+     *
      * @param input an integer number
      * @return true if input is a prime number
      */

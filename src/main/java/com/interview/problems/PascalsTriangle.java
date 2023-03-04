@@ -4,6 +4,7 @@ public class PascalsTriangle {
 
     /**
      * Prints Pascal Triangle
+     *
      * @param n Nth row of Pascal's triangle
      * @return returns a text block representing Pascal's triangle to the Nth row
      */
@@ -25,6 +26,7 @@ public class PascalsTriangle {
 
     /**
      * Create the pascal triangle through a matrix
+     *
      * @param n Nth row of Pascal's triangle
      * @return retuns a matrix representing Pascal's triangle to the Nth row
      */
@@ -40,7 +42,7 @@ public class PascalsTriangle {
         var triangle = new Integer[n + 1][];
         for (int line = 0; line <= n; line++) {
             var row = new Integer[line + 1];
-            for (int i = 0; i <= line ; i++) {
+            for (int i = 0; i <= line; i++) {
                 if (i == 0 || i == line) {
                     row[i] = 1;
                 } else {
@@ -54,19 +56,20 @@ public class PascalsTriangle {
 
     /**
      * Create the pascal triangle through a matrix, using Binomial Expansion/Theorem (https://en.wikipedia.org/wiki/Binomial_theorem)
+     *
      * @param n Nth row of Pascal's triangle
      * @return retuns a matrix representing Pascal's triangle to the Nth row
      */
     public static Integer[][] withBinomialExpansion(int n) {
         var triangle = new Integer[n + 1][];
-        for (int line = 1; line <= n+1; line++) {
+        for (int line = 1; line <= n + 1; line++) {
             var row = new Integer[line];
             int k = 1;
             for (int i = 1; i <= line; i++) {
-                row[i-1] = k;
+                row[i - 1] = k;
                 k = k * (line - i) / i;
             }
-            triangle[line-1] = row;
+            triangle[line - 1] = row;
         }
         return triangle;
     }

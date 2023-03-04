@@ -9,7 +9,9 @@ There may be some more elegant and performant solutions.
  * [jUnit 5](https://junit.org/junit5/)
 
 ### Java Problems
- * Calculate the Largest Prime Factor
+ * Factorial
+ * Fibonacci Sequence
+ * Largest Prime Factor
  * Palindrome
  * Pascal's Triangle
  * Prime Number Check
