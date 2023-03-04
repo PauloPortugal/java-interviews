@@ -9,14 +9,14 @@ public class Factorial {
      * @return the result
      */
     public static int of(int n) {
-        return of(0, n);
+        return factorial(0, n);
     }
 
-    private static int of(int acc, int n) {
+    private static int factorial(int acc, int n) {
         if (n == 1) {
             return 1;
         }
 
-        return n * of(acc, n - 1);
+        return n * factorial(acc, n - 1);
     }
 }
