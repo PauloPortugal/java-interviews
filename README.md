@@ -4,6 +4,7 @@ A collection of pair programming interview problems
 ### Java Problems
  * Calculate the Largest Prime Factor
  * Palindrome
+ * Pascal's Triangle
  * Reverse Generic Array
 
 ### Java features ordered by releases
