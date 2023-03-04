@@ -1,4 +1,8 @@
 # Java Programming Interview Problems
+
+[![Build Status](https://github.com/PauloPortugal/java-interviews/actions/workflows/pr-checks.yml/badge.svg?branch=main)](https://github.com/PauloPortugal/java-interviews/actions/workflows/pr-checks.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/PauloPortugal/java-interviews/branch/main/graph/badge.svg)](https://codecov.io/gh/PauloPortugal/java-interviews)
+
 A collection of pair programming interview problems, using idiomatic Java and avoid as much as possible third-party libraries.
 
 The solutions express just an approach to a problem. 
