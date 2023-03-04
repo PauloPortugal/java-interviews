@@ -7,6 +7,7 @@ There may be some more elegant and performant solutions.
 ### Dependencies
  * [Java 17](https://www.oracle.com/java/technologies/javase/17-relnote-issues.html)
  * [jUnit 5](https://junit.org/junit5/)
+ * [Sonatype OSS Index](https://sonatype.github.io/ossindex-maven/maven-plugin/)
 
 ### Java Problems
  * Factorial
