@@ -16,6 +16,7 @@ There may be some more elegant and performant solutions.
  * Palindrome
  * Pascal's Triangle
  * Prime Number Check
+ * Real FizzBuzz
  * Reverse Generic Array
 
 ### Java features ordered by releases
