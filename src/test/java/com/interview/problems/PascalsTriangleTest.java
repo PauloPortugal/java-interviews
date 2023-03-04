@@ -33,9 +33,9 @@ public class PascalsTriangleTest extends TestCase {
     }
 
     public void testUseBinomialExpansion() {
-        assertTrue(Arrays.deepEquals(new Integer[][]{{1}}, pascalsTriangle.useBinomialExpansion(0)));
-        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1, 1}}, pascalsTriangle.useBinomialExpansion((1))));
-        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1,1}, {1,2,1}}, pascalsTriangle.useBinomialExpansion(2)));
-        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1,1}, {1,2,1}, {1,3,3,1}, {1,4,6,4,1}, {1,5,10,10,5,1}}, pascalsTriangle.useBinomialExpansion(5)));
+        assertTrue(Arrays.deepEquals(new Integer[][]{{1}}, pascalsTriangle.withBinomialExpansion(0)));
+        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1, 1}}, pascalsTriangle.withBinomialExpansion((1))));
+        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1,1}, {1,2,1}}, pascalsTriangle.withBinomialExpansion(2)));
+        assertTrue(Arrays.deepEquals(new Integer[][]{{1}, {1,1}, {1,2,1}, {1,3,3,1}, {1,4,6,4,1}, {1,5,10,10,5,1}}, pascalsTriangle.withBinomialExpansion(5)));
     }
 }

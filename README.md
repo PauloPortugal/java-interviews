@@ -1,5 +1,8 @@
 # Java Programming Interview Problems
-A collection of pair programming interview problems
+A collection of pair programming interview problems.
+
+This is just an approach to the problems. 
+There may be some more elegant solutions.
 
 ### Java Problems
  * Calculate the Largest Prime Factor
@@ -8,6 +11,8 @@ A collection of pair programming interview problems
  * Reverse Generic Array
 
 ### Java features ordered by releases
+
+Not an extensive list, but mainly the most practical features.
 
 | **Feature**                                           | **Version**       |
 |-------------------------------------------------------|---------------|

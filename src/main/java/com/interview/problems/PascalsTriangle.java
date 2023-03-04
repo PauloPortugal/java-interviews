@@ -2,6 +2,11 @@ package com.interview.problems;
 
 public class PascalsTriangle {
 
+    /**
+     * Prints Pascal Triangle
+     * @param n Nth row of Pascal's triangle
+     * @return returns a text block representing Pascal's triangle to the Nth row
+     */
     protected String printPascalTriangle(int n) {
         StringBuilder sb = new StringBuilder();
         Integer[][] triangle = getPascalTriangle(n);
@@ -18,6 +23,11 @@ public class PascalsTriangle {
         return sb.toString();
     }
 
+    /**
+     * Create the pascal triangle through a matrix
+     * @param n Nth row of Pascal's triangle
+     * @return retuns a matrix representing Pascal's triangle to the Nth row
+     */
     protected Integer[][] getPascalTriangle(int n) {
         if (n < 0) {
             return new Integer[][]{};
@@ -42,7 +52,12 @@ public class PascalsTriangle {
         return triangle;
     }
 
-    public Integer[][] useBinomialExpansion(int n) {
+    /**
+     * Create the pascal triangle through a matrix, using Binomial Expansion/Theorem (https://en.wikipedia.org/wiki/Binomial_theorem)
+     * @param n Nth row of Pascal's triangle
+     * @return retuns a matrix representing Pascal's triangle to the Nth row
+     */
+    public Integer[][] withBinomialExpansion(int n) {
         var triangle = new Integer[n + 1][];
         for (int line = 1; line <= n+1; line++) {
             var row = new Integer[line];
