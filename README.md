@@ -1,8 +1,12 @@
 # Java Programming Interview Problems
-A collection of pair programming interview problems.
+A collection of pair programming interview problems, using idiomatic Java and avoid as much as possible third-party libraries.
 
-This is just an approach to the problems. 
-There may be some more elegant solutions.
+The solutions express just an approach to a problem. 
+There may be some more elegant and performant solutions.
+
+### Dependencies
+ * [Java 17](https://www.oracle.com/java/technologies/javase/17-relnote-issues.html)
+ * [jUnit 5](https://junit.org/junit5/)
 
 ### Java Problems
  * Calculate the Largest Prime Factor
@@ -15,7 +19,7 @@ There may be some more elegant solutions.
 
 Not an extensive list, but mainly the most practical features.
 
-| **Feature**                                           | **Version**       |
+| **Feature**                                           | **Version**   |
 |-------------------------------------------------------|---------------|
 | Lambda Expressions                                    | Java 8        |
 | Interface Extension Method ('default' concrete)       | Java 8        |

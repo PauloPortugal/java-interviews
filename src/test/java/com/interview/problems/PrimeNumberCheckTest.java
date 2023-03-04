@@ -1,10 +1,14 @@
 package com.interview.problems;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
-public class PrimeNumberCheckTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-    public void testIsPrimeNumber() {
+public class PrimeNumberCheckTest {
+
+    @Test
+    public void isPrimeNumber() {
         assertTrue(PrimeNumberCheck.isPrimeNumber(2));
         assertTrue(PrimeNumberCheck.isPrimeNumber(3));
         assertTrue(PrimeNumberCheck.isPrimeNumber(5));

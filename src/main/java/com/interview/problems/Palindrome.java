@@ -10,7 +10,7 @@ public class Palindrome {
      * @param number number to test if is palindrome
      * @return true if is a palindrome, false otherwise
      */
-    protected boolean isPalindrome(int number) {
+    public static boolean isPalindrome(int number) {
         if (number < 0) {
             number *= -1;
         }
@@ -32,7 +32,7 @@ public class Palindrome {
      * @param word the provided input
      * @return true if is a palindrome, false otherwise
      */
-    protected boolean isPalindrome(String word) {
+    public static boolean isPalindrome(String word) {
         if (word == null || word.trim().length() == 0) {
             return false;
         }
@@ -50,7 +50,7 @@ public class Palindrome {
      * @param word the provided input
      * @return true if is a palindrome, false otherwise
      */
-    protected String degreeOfPalindrome(String word) {
+    public static String degreeOfPalindrome(String word) {
         if (word == null || word.trim().length() == 0) {
             return "0%";
         }

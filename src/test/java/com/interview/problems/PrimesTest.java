@@ -1,15 +1,16 @@
 package com.interview.problems;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
-public class PrimesTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    LargestPrimeFactor primes = new LargestPrimeFactor();
+public class PrimesTest {
 
-    public void testGetLargestPrimeFactor() {
-        assertEquals(5, primes.getLargestPrimeFactor(15));
-        assertEquals(7, primes.getLargestPrimeFactor(49));
-        assertEquals(2, primes.getLargestPrimeFactor(2));
-        assertEquals(-1, primes.getLargestPrimeFactor(1));
+    @Test
+    public void getLargestPrimeFactor() {
+        assertEquals(5, LargestPrimeFactor.getLargestPrimeFactor(15));
+        assertEquals(7, LargestPrimeFactor.getLargestPrimeFactor(49));
+        assertEquals(2, LargestPrimeFactor.getLargestPrimeFactor(2));
+        assertEquals(-1, LargestPrimeFactor.getLargestPrimeFactor(1));
     }
 }

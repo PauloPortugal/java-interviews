@@ -8,7 +8,7 @@ public class LargestPrimeFactor {
      * @param input an integer
      * @return the larges prime factor of a given number
      */
-    public int getLargestPrimeFactor(int input) {
+    public static int getLargestPrimeFactor(int input) {
         int i;
         long inputCopy = input;
 

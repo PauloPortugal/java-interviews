@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class ReverseGenericArray<T> {
+public class ReverseGenericArray {
 
     /**
      * Reverses a generic Array
@@ -13,7 +13,7 @@ public class ReverseGenericArray<T> {
      * @param array input array
      * @return return a reversed array if array is not null and has at least one element
      */
-    public T[] reverse(T[] array) {
+    public static <T> T[] reverse(T[] array) {
         if (isEmpty(array)) {
             return null;
         }
@@ -28,7 +28,7 @@ public class ReverseGenericArray<T> {
                 .toArray(Arrays.copyOf(array, array.length));
     }
 
-    private boolean isEmpty(T[] array) {
+    private static <T> boolean isEmpty(T[] array) {
         return (array == null || array.length == 0);
     }
 }

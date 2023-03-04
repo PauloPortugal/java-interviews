@@ -7,7 +7,7 @@ public class PascalsTriangle {
      * @param n Nth row of Pascal's triangle
      * @return returns a text block representing Pascal's triangle to the Nth row
      */
-    protected String printPascalTriangle(int n) {
+    public static String printPascalTriangle(int n) {
         StringBuilder sb = new StringBuilder();
         Integer[][] triangle = getPascalTriangle(n);
         for (int i = 0; i < triangle.length; i++) {
@@ -28,7 +28,7 @@ public class PascalsTriangle {
      * @param n Nth row of Pascal's triangle
      * @return retuns a matrix representing Pascal's triangle to the Nth row
      */
-    protected Integer[][] getPascalTriangle(int n) {
+    public static Integer[][] getPascalTriangle(int n) {
         if (n < 0) {
             return new Integer[][]{};
         }
@@ -57,7 +57,7 @@ public class PascalsTriangle {
      * @param n Nth row of Pascal's triangle
      * @return retuns a matrix representing Pascal's triangle to the Nth row
      */
-    public Integer[][] withBinomialExpansion(int n) {
+    public static Integer[][] withBinomialExpansion(int n) {
         var triangle = new Integer[n + 1][];
         for (int line = 1; line <= n+1; line++) {
             var row = new Integer[line];

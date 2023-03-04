@@ -1,34 +1,37 @@
 package com.interview.problems;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
-public class PalindromeTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.*;
 
-    Palindrome palindrome = new Palindrome();
+public class PalindromeTest {
 
-    public void testIsPalindrome() {
-        assertTrue(palindrome.isPalindrome(101));
-        assertTrue(palindrome.isPalindrome(-101));
-        assertTrue(palindrome.isPalindrome(1));
-        assertTrue(palindrome.isPalindrome(0));
-        assertTrue(palindrome.isPalindrome(1010101));
+    @Test
+    public void isIntegerPalindrome() {
+        assertTrue(Palindrome.isPalindrome(101));
+        assertTrue(Palindrome.isPalindrome(-101));
+        assertTrue(Palindrome.isPalindrome(1));
+        assertTrue(Palindrome.isPalindrome(0));
+        assertTrue(Palindrome.isPalindrome(1010101));
 
-        assertFalse(palindrome.isPalindrome(123));
+        assertFalse(Palindrome.isPalindrome(123));
     }
 
-    public void testTestIsPalindrome() {
-        assertTrue(palindrome.isPalindrome("Bob"));
-        assertFalse(palindrome.isPalindrome("cat"));
-        assertFalse(palindrome.isPalindrome("zoRRO"));
-        assertFalse(palindrome.isPalindrome(""));
+    @Test
+    public void isStringPalindrome() {
+        assertTrue(Palindrome.isPalindrome("Bob"));
+        assertFalse(Palindrome.isPalindrome("cat"));
+        assertFalse(Palindrome.isPalindrome("zoRRO"));
+        assertFalse(Palindrome.isPalindrome(""));
     }
 
-    public void testDegreeOfPalindrome() {
-        assertEquals("100%", palindrome.degreeOfPalindrome("Bob"));
-        assertEquals("33%", palindrome.degreeOfPalindrome("cat"));
-        assertEquals("20%", palindrome.degreeOfPalindrome("zoRRo"));
-        assertEquals("14%", palindrome.degreeOfPalindrome("Barbara"));
-        assertEquals("0%", palindrome.degreeOfPalindrome("John"));
-        assertEquals("0%", palindrome.degreeOfPalindrome(""));
+    @Test
+    public void degreeOfPalindrome() {
+        assertEquals("100%", Palindrome.degreeOfPalindrome("Bob"));
+        assertEquals("33%", Palindrome.degreeOfPalindrome("cat"));
+        assertEquals("20%", Palindrome.degreeOfPalindrome("zoRRo"));
+        assertEquals("14%", Palindrome.degreeOfPalindrome("Barbara"));
+        assertEquals("0%", Palindrome.degreeOfPalindrome("John"));
+        assertEquals("0%", Palindrome.degreeOfPalindrome(""));
     }
 }
